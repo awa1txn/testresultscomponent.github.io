@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+
+  <section>
+    <main>
+      <p class="el"><h3>Your Result</h3></p>
+      <div class="mark el">
+        <p><b>76</b></p>
+        of 100
+      </div>
+      <p class="el"><h1>Great</h1></p>
+      <p class="mark-desc el">You scored higher than 65% of the people who have taken these tests.</p>
+      
+    </main>
+    <aside>
+      <p  class="heading">Summary</p>
+      <div class="el-main reaction">
+        <img src="./assets/images/icon-reaction.svg" alt="">
+        <p>Reaction</p> 
+        <p><span>80</span>/<span>100</span></p>
+      </div>
+      <div class="el-main memory">
+        <img src="./assets/images/icon-memory.svg" alt="">
+        <p>Memory</p> 
+        <p><span>92</span>/<span>100</span></p>
+      </div>
+      <div class="el-main verbal">
+        <img src="./assets/images/icon-verbal.svg" alt="">
+        <p>Verbal</p> 
+        <p><span>61</span>/<span>100</span></p>
+      </div>
+      <div class="el-main visual">
+        <img src="./assets/images/icon-visual.svg" alt="">
+        <p>Visual</p> 
+        <p><span>72</span>/<span>100</span></p>
+      </div>
+    <button>Continue</button>
+    </aside>
+  </section>
+  
+<script>
+  let results = `[
+  {
+    "category": "Reaction",
+    "score": 80,
+    "icon": "./assets/images/icon-reaction.svg"
+  },
+  {
+    "category": "Memory",
+    "score": 92,
+    "icon": "./assets/images/icon-memory.svg"
+  },
+  {
+    "category": "Verbal",
+    "score": 61,
+    "icon": "./assets/images/icon-verbal.svg"
+  },
+  {
+    "category": "Visual",
+    "score": 72,
+    "icon": "./assets/images/icon-visual.svg"
+  }
+]`;
+
+JSON.parse(results).map(el=>console.log(el.category))
+</script>
+</body>
+</html>

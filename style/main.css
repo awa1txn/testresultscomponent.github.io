@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    background: white;
+    width: 700px;
+    height: 440px;
+    border-radius: 30px;
+    -webkit-box-shadow: -12px 11px 100px -49px rgba(0,0,0,0.75);
+    -moz-box-shadow: -12px 11px 100px -49px rgba(0,0,0,0.75);
+    box-shadow: -12px 11px 100px -49px rgba(0,0,0,0.75);
+}
+main{
+    background: rgb(67,49,217);
+background: linear-gradient(180deg, rgba(67,49,217,1) 50%, rgba(60,44,148,1) 100%);
+    width: 48%;
+    border-radius: 30px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.mark-desc{
+    width: 200px;
+}
+.mark{
+    display:flex;
+    width: 160px;
+    height: 160px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(62, 52, 197);
+    border-radius: 100%;
+    font-size: 12px;
+    position:relative;
+}
+.mark>p{
+    font-size: 42px;
+}
+.el:nth-child(even) {
+    margin: 20px 0px 40px 0px;
+}
+aside{
+    margin:auto;
+    text-align: left;
+    height: 95%;
+    width: 42%;
+}
+.el-main{
+    text-align: left;
+    display: flex;
+    padding: 12px;
+    border-radius: 7px;
+}
+.el-main>p:nth-child(even){
+    text-align: left;
+    width: 70px;
+    margin-left:10px
+}
+.el-main>p:nth-child(odd){
+    margin-left: 120px;
+}
+.el-main:nth-child(n){
+    margin-bottom: 20px;
+}
+.el-main:nth-child(-1){
+    margin-bottom: 40px;
+}
+.heading{
+    font-weight:bold;
+    font-size: 20px;
+    margin: 15px 0px;
+    text-align: left;
+}
+.reaction{
+    background: #FCF8F5;
+    color: #D06E73;
+    font-weight: bold;
+}
+.memory{
+    background:#FDFDED;
+    color:#E0A84B;
+    font-weight: bold;
+}
+.verbal{
+    background: #F1FAFA;
+    color: #47B097;
+    font-weight: bold;
+}
+.visual{
+    background: #F3F3FC;
+    color:#152C9B;
+    font-weight: bold;
+}
+button{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background: rgb(46, 60, 89);
+	color: white;
+	border-radius: 20px;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    
+}
+button:hover{
+    background: rgb(96, 69, 252);
+background: linear-gradient(180deg, rgba(67,49,217,1) 23%, rgba(69,51,171,1) 100%);
+}
